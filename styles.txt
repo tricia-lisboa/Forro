@@ -1,0 +1,96 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  border-style: groove;
+  border-bottom: none;
+  border-width: 2px;
+  border-color: #eeffe9;
+  height: 80px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.header h2 {
+  /* margin-top: 20px; */
+  /* botei o texto no centro e mais pra direita ass: tri*/
+  text-align: center;
+  margin-left: 90px;
+  width: 300px;
+}
+.header nav {
+  width: 500px;
+  margin-top: 20px;
+  margin-left: 20%;
+}
+.header img {
+  width: 100px;
+}
+.background-login {
+  background-color: #0617ad;
+  width: 100%;
+  height: 100%;
+}
+
+.btn-login {
+  width: 194px;
+  height: 42px;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 40px;
+  cursor: pointer;
+}
+#nav-home {
+  font-size: 20px;
+}
+#nav-quem-somos {
+  font-size: 17px;
+}
+.tab-content {
+  /* padding-top: 50px; */
+  height: 100vh;
+  position: relative;
+}
+.tab-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  /* background-image:url("img/slide1.png"); */
+  /* background-color: #797979; */
+}
+.tab-pane {
+  position: absolute;
+  z-index: 10;
+}
+
+.img-fundo {
+  background-image: url("https://i.pngimg.me/thumb/f/720/m2i8b1K9d3N4K9A0.jpg");
+  background-repeat: no-repeat;
+  opacity: 0.8;
+  height: 500px;
+}
+
+#estudo-cientifico,
+#orientacao-descarte {
+  max-width: 100%;
+}
+
+/* coloquei isso aqui (sombra) ass:tri */
+.carousel-caption {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+  }

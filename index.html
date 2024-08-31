@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+    />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"> -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="script.js"></script>
+
+    <title>Forro Sustentável</title>
+  </head>
+
+  <body>
+    <div class="container" style="width: 100%; text-align: center">
+      <div class="header">
+        <img src="img\logo.jpeg" class="header_icon" />
+        <h2>Forro Sustentável</h2>
+        <nav>
+          <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <button
+              class="nav-link active"
+              id="nav-home-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-home"
+              type="button"
+              role="tab"
+              aria-controls="nav-home"
+              aria-selected="true"
+            >
+              Home
+            </button>
+            <button
+              class="nav-link"
+              id="nav-como-reciclar-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-como-reciclar"
+              type="button"
+              role="tab"
+              aria-controls="nav-como-reciclar"
+              aria-selected="false"
+            >
+              Como reciclar
+            </button>
+            <button
+              class="nav-link"
+              id="nav-como-doar-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-como-doar"
+              type="button"
+              role="tab"
+              aria-controls="nav-como-doar"
+              aria-selected="false"
+            >
+              Como doar
+            </button>
+            <button
+              class="nav-link"
+              id="nav-quem-somos-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-quem-somos"
+              type="button"
+              role="tab"
+              aria-controls="nav-quem-somos"
+              aria-selected="false"
+            >
+              Quem somos
+            </button>
+          </div>
+        </nav>
+      </div>
+
+      <div class="break"></div>
+      <!-- break -->
+
+      <div class="tab-content" id="nav-tabContent">
+        <div
+          class="tab-pane fade show active"
+          id="nav-home"
+          role="tabpanel"
+          aria-labelledby="nav-home-tab"
+          tabindex="0"
+        >
+          <!-- ADICIONEI UM CARROSSEL ASS:TRICIA-->
+          <div
+      id="carouselExampleCaptions"
+      class="carousel slide carousel-fade"
+      data-bs-ride="carousel"
+    >
+      <!-- data-bs-theme="dark" -->
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="img/slide1.png"
+            class="d-block mx-auto w-100"
+            alt="..."
+          />
+          <!-- <div class="carousel-caption">
+            <h5>Praia 1</h5>
+            <p>Praia bonita</p>
+          </div> -->
+        </div>
+        <div class="carousel-item">
+          <img
+            src="img/lixeiras.jpg"
+            class="d-block mx-auto w-100"
+            alt="..."
+          />
+          <div class="carousel-caption">
+            <h5>Como Reciclar!</h5>
+            <p>Aprenda a como reciclar as caixas de leite para utilizar na criação do forro</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="img/doar.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption">
+            <h5>Como doar para ajudar o projeto</h5>
+            <p>Veja aqui os principais endereços na capital para fazer a doação das caixinhas de leite descartadas</p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+            <br>
+          <!-- FECHEI O CARROSSEL ASS:TRICIA -->
+          <div class="row align-items-start">
+            <div class="col-6">
+              <span
+                >Nosso site foi desenvolvido para informar e orientar sobre
+                reaproveitamento, reciclagem, fabricação e execução de materiais
+                produzidos a partir de resíduos que são descartados de forma
+                incorreta.
+              </span>
+            </div>
+            <div class="col-6">
+              <p>
+                Devido a preocupação com o descarte incorreto da caixa de leite,
+                surgiu a ideia de criar um site que oriente as pessoas não
+                somente na correção de descarte de resíduos, mas também com
+                informações sobre os mesmos. Há período de decomposição tardio
+                causando ainda mais impactos ao meio ambiente.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="tab-pane fade"
+          id="nav-como-doar"
+          role="tabpanel"
+          aria-labelledby="nav-como-doar-tab"
+          tabindex="0"
+        >
+          <div class="container text-center">
+            <div class="row mt-3">
+              <div class="col">
+                Para doar itens de caixas de leite, abaixo estão os principais
+                pontos de Coleta Seletiva são:
+
+                <u>
+                  <li>1-Praça Da República - Campina</li>
+                  <li>2-Praça Batista Campos - Batista Campos</li>
+                  <li>3-Praça Dom Pedro - Cidade Velha</li>
+                  <li>4-Praça Amazonas - Jurunas</li>
+                  <li>5-Praça Floriano Peixoto - São Braz</li>
+                </u>
+              </div>
+              <div class="col">
+                O Serviço da Prefeitura de Belém acontece de segunda a Sábado
+                Das 08H Às 12H:<br />
+                <a
+                  href="https://semma.belem.pa.gov.br/tabela-de-coleta-seletiva/"
+                  target="_blank"
+                  >Mapa de Coleta Seletiva</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="nav-como-reciclar"
+          role="tabpanel"
+          aria-labelledby="nav-como-reciclar-tab"
+          tabindex="0"
+        >
+          <div class="container">
+            <img id="orientacao-descarte" src="img/orientacao-descarte.png" />
+            <img id="estudo-cientifico" src="img/estudo-cientifico.png" />
+          </div>
+        </div>
+
+        <div
+          class="tab-pane fade"
+          id="nav-quem-somos"
+          role="tabpanel"
+          aria-labelledby="nav-quem-somos-tab"
+          tabindex="0"
+        >
+          <div class="container">
+            <div class="row mt-3">
+              <div>
+                <span
+                  >Nosso site tem como objetivo ser um meio de comunicação para
+                  orientar as pessoas e auxilia-las a nos ajudar na coleta
+                  destes materiais reutilizaveis.<br />
+                  Queremos conscientizar as pessoas por intermédio de nossas
+                  informações e ações. O local aderido como ponto de coleta será
+                  na Universidade UNAMA. Site
+                  <a
+                    href="https://www.unama.br/institucional/nacional"
+                    target="_blank"
+                    >Unama</a
+                  >
+                </span>
+              </div>
+              <img src="img/objetivo.png" />
+            </div>
+          </div>
+
+          <br />
+        </div>
+      </div>
+    </div>
+    <style>
+      body {
+        font-family: "Open Sans", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+      }
+
+      .container {
+        max-width: 100%;
+      }
+
+      .header {
+        /* botei o tom azul - tri =D */
+        background: linear-gradient(180deg, rgba(0,79,144,1) 0%, rgba(57,166,255,1) 100%);
+        color: white;
+        text-align: center;
+        padding: 1em 0;
+      }
+
+      .header_icon {
+        max-width: 50px;
+        border-radius: 50%;
+      }
+
+      .nav-tabs {
+        /* botei o tom de azul mais claro tricia =d */
+        background-color: #39a6ff;
+      }
+
+      .nav-tabs .nav-link {
+        color: white;
+      }
+
+      .nav-tabs .nav-link:hover {
+        background-color: #0062b1;
+      }
+
+      .nav-tabs p:hover{
+        background-color: #fff;
+      }
+
+      .tab-content {
+        margin-top: 20px;
+      }
+
+      .tab-pane img {
+        max-width: 100%;
+        height: auto;
+        margin-top: 20px;
+      }
+
+      #orientacao-descarte,
+      #estudo-cientifico {
+        display: block;
+        margin: 20px auto;
+      }
+
+      /* Adicionando animações */
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      .fade-in {
+        animation: fadeIn 1s ease-in-out;
+      }
+
+      /* Tirei o Carrossel ass: Trícia*/
+      /* Adicionei uma config do carrossel */
+        .carousel-item {
+          margin-left: 125px;
+          width: 1200px;
+        height: 500px;
+        }
+    </style>
+  </body>
+
+  <script>
+
+    // Adicionando animação ao alternar entre as abas
+document.querySelectorAll('.nav-link').forEach(function(tab) {
+tab.addEventListener('click', function() {
+document.querySelector('.tab-content').classList.add('fade-in');
+setTimeout(function() {
+    document.querySelector('.tab-content').classList.remove('fade-in');
+}, 1000);
+});
+});
+
+// Adicionando animação ao clicar no botão de animar
+document.getElementById('animateButton').addEventListener('click', function () {
+const element = document.querySelector('.content');
+
+// Adiciona uma classe para iniciar a animação
+element.classList.add('animate');
+
+// Remove a classe após a animação ser concluída
+setTimeout(() => {
+element.classList.remove('animate');
+}, 1000); // Ajuste este valor de acordo com a duração da animação em milissegundos
+});
+    </script>
+</html>
